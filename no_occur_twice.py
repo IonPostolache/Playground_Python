@@ -10,7 +10,7 @@ for i in inputlist:
     counter=inputlist.count(i)
     #print(counter)
     if counter==1:
-        uniquelist.append(i)
+        #uniquelist.append(i)
         print(i)
 
 #print(uniquelist)
