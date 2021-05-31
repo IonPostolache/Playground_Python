@@ -6,7 +6,7 @@ For example given number is 59, the result will be 5.
 Step 1: 5 + 9 = 14
 Step 1: 1 + 4 = 5    """
 
-input=988779999777597987987098670986098799999978
+input=48
 print(f"Input: {input}")
 
 def digits(n):
@@ -20,10 +20,8 @@ def digits(n):
 first_loop=digits(input)
 print(first_loop)
 
-if first_loop>=10:
+while first_loop>=10:
     second_loop=digits(first_loop)
     print(second_loop)
-
-if second_loop>=10:
-    third_loop=digits(second_loop)
-    print(third_loop)
+    first_loop=second_loop
+    continue
