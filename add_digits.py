@@ -11,11 +11,9 @@ print(f"Input: {iinput}")
 
 while iinput>9:
     string = str(iinput)
-    lenghti = len(string)
     count=0
-    for i in range(0, lenghti):
-        indexi=string[i]
-        count=count+int(indexi)
+    for i in range(0, len(string)):
+        count=count+int(string[i])
         iinput=count
 
 print(count)
