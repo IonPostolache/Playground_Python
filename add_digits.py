@@ -6,22 +6,16 @@ For example given number is 59, the result will be 5.
 Step 1: 5 + 9 = 14
 Step 1: 1 + 4 = 5    """
 
-input=48
-print(f"Input: {input}")
+iinput=48
+print(f"Input: {iinput}")
 
-def digits(n):
-    numberdef=0
-    string = str(n)
-    for i in string:
-        integerdef=int(i)
-        numberdef=numberdef+integerdef
-    return numberdef
+while iinput>9:
+    string = str(iinput)
+    lenghti = len(string)
+    count=0
+    for i in range(0, lenghti):
+        indexi=string[i]
+        count=count+int(indexi)
+        iinput=count
 
-first_loop=digits(input)
-print(first_loop)
-
-while first_loop>=10:
-    second_loop=digits(first_loop)
-    print(second_loop)
-    first_loop=second_loop
-    continue
+print(count)
