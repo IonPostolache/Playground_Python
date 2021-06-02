@@ -10,12 +10,12 @@ inputno=[13,14]
 print(inputno)
 
 def reversef(n):
+    n=str(n)
     return n[::-1]
 
-firstrev=reversef(str(inputno[0]))
-secondrev=reversef(str(inputno[1]))
+firstrev=reversef(inputno[0])
+secondrev=reversef(inputno[1])
 sumrev=int(firstrev)+int(secondrev)
-#print(sumrev)
-sumstring=str(sumrev)
-sumnonrev=reversef(sumstring)
+print(sumrev)
+sumnonrev=reversef(sumrev)
 print(sumnonrev)
