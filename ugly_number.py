@@ -9,7 +9,6 @@ Note: 1 is typically treated as an ugly number
 24.1. Given a number n, the task is to find n’th Ugly number."""
 
 number=int(input("what is the number: > "))
-#print(number)
 prime_factors=[2,3,5]
 
 def divide(n_check, primef):
