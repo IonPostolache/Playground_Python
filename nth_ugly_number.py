@@ -14,9 +14,7 @@ ugly_numbers = []
 
 
 def main(number1):
-    # number1=number
     if number1 == 1:
-        # print(1 == True)
         return
     elif number1 == 2 or number1 == 3 or number1 == 5:
         ugly_numbers.append(number1)
@@ -25,27 +23,21 @@ def main(number1):
         if number1 % 2 == 0:
             result = number1 / 2
             if result in prime_factors:
-                # print(result in prime_factors)
                 return
             number1 = result
         elif number1 % 3 == 0:
             result = number1 / 3
             if result in prime_factors:
-                # print(result in prime_factors)
                 return
             number1 = result
         elif number1 % 5 == 0:
             result = number1 / 5
             if result in prime_factors:
-                # print(result in prime_factors)
                 return
             number1 = result
         else:
-            # print(number1 in prime_factors)
             ugly_numbers.pop()
             return
-            # flag=False
-
 
 a = 1
 while len(ugly_numbers) < number:
@@ -53,5 +45,6 @@ while len(ugly_numbers) < number:
     main(a)
     a += 1
 
-print(ugly_numbers)
+print(number in ugly_numbers)
+#print(ugly_numbers)
 print(f"The {number}'th ugly number is {ugly_numbers[-1]}.")
